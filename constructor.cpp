@@ -1,2 +1,8 @@
 #include <iostream>
-using namespace std
+using namespace std;
+
+class mahasiswa{
+    public:
+    mahasiswa();//Constructor mahasiswa
+};
+
