@@ -22,7 +22,7 @@ mahasiswa::mahasiswa(int iNim){
     nim = iNim;
 }
 
-mahasiswa::mahasiswa(int iNama){
+mahasiswa::mahasiswa(string iNama){
     nama = iNama;
 }
 
