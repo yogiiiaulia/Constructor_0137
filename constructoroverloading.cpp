@@ -25,3 +25,5 @@ mahasiswa::mahasiswa(int iNim){
 mahasiswa::mahasiswa(int iNama){
     nama = iNama;
 }
+
+int
