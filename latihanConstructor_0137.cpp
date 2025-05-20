@@ -2,18 +2,31 @@
 using namespace std;
 
 class Barang {
-    public :
-    Barang (string namaBarang, int kodeBarang);
+    private :
+    string namaBarang;
+    int kodeBarang;
+    
+public :
+    Barang(string nama,int kode );
+    
+
+    
+    void cetak ();
 
 };
 
-Barang::Barang(string namaBarang, int kodeBarang){
-    cout << "Constructor Dengan Parameter Terpanggil" << endl;
-    cout << "Nama Barang : " << namaBarang << endl;
-    cout << "kode Barang : " << kodeBarang << endl;
+Barang::Barang(string nama, int kode){
+    namaBarang = nama;
+    kodeBarang = kode;
+}
+
+void Barang::cetak(){
+    cout<<"namaBarang : "<<namaBarang <<endl;
+    cout<<"kodeBarang : "<<kodeBarang <<endl;
 }
 
 int main(){
-    Barang brg("Lemari", 49);
+    Barang brg("Lemari", 89);
+    brg.cetak();
     return 0;
 }
